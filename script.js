@@ -1,7 +1,7 @@
 function calculateMinCost(e) {
   //your code here
 	e.preventDefault();
-let ropes = document.getElementById("rope-lengths").value().split(",").map(str => parseInt(str));
+let ropes = document.getElementById("rope-lengths").value.split(",").map(str => parseInt(str));
 let minCost = 0;
 
 	while(ropes.length > 1){
