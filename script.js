@@ -2,9 +2,17 @@ function calculateMinCost() {
   //your code here
 let ropes = document.getElementById("rope-lengths").split(",").map(str => parseInt(str));
 let minCost = 0;
-document.getElementById("result").innerText = ropes
+
+	while(ropes.length > 1){
+		ropes.sort((a,b) => a-b);
+		minCost += ropes[0] + ropes[1];
+		ropes.splice(0, 2, combinedCost);
+	}
+
 	
- // console.log(ropes);
+	
+ 
+document.getElementById("result").innerText = minCost;
   
   
 }  
