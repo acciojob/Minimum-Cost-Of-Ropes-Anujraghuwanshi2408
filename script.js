@@ -1,5 +1,6 @@
-function calculateMinCost() {
+function calculateMinCost(e) {
   //your code here
+	e.preventDefault();
 let ropes = document.getElementById("rope-lengths").split(",").map(str => parseInt(str));
 let minCost = 0;
 
